@@ -1,18 +1,22 @@
-Algoritmo "antecessor_sucessor"
+Algoritmo "PAR_INFERIOR"
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : Antonio Carlos Nicolodi 
 // Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 13/10/2023
+// Data atual  : 03/11/2023
 Var
-// Seção de Declarações das variáveis 
-   n : INTEIRO
+// Seção de Declarações das variáveis
+   NUM : INTEIRO
+
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
-   LEIA(N)
+   LEIA(NUM)
    
-   ESCREVAL("sEU ANTECESSOR: ", N-1)
-   ESCREVAL("SEU SUCESSOR: ", N+1)
+   SE ((NUM MOD 2 = 0) E (NUM < 10)) ENTAO
+      ESCREVAL("O NUMERO É PAR E INFERIOR A 10")
+   SENAO
+        ESCREVAL("NÃO SEGUE AS CONDIÇÕES")
+   FIMSE
 
 Fimalgoritmo

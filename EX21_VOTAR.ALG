@@ -1,18 +1,23 @@
-Algoritmo "antecessor_sucessor"
+Algoritmo "VOTAR"
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : Antonio Carlos Nicolodi 
 // Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 13/10/2023
+// Data atual  : 03/11/2023
 Var
 // Seção de Declarações das variáveis 
-   n : INTEIRO
+   ANO_NASC, ANO_ACT, IDADE : INTEIRO
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
-   LEIA(N)
+   LEIA(ANO_NASC, ANO_ACT)
    
-   ESCREVAL("sEU ANTECESSOR: ", N-1)
-   ESCREVAL("SEU SUCESSOR: ", N+1)
+   IDADE := ANO_ACT - ANO_NASC
+   
+   SE (IDADE < 18) ENTAO
+      ESCREVAL("NAO PODE VOTAR")
+   SENAO
+        ESCREVAL("PODE VOTAR")
+   FIMSE
 
 Fimalgoritmo
