@@ -1,18 +1,25 @@
-Algoritmo "antecessor_sucessor"
+Algoritmo "SOMA_PAR"
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : Antonio Carlos Nicolodi 
 // Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 13/10/2023
+// Data atual  : 03/11/2023
 Var
 // Seção de Declarações das variáveis 
-   n : INTEIRO
+   N1, N2, SOMA : INTEIRO
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
-   LEIA(N)
+   LEIA(N1, N2)
    
-   ESCREVAL("sEU ANTECESSOR: ", N-1)
-   ESCREVAL("SEU SUCESSOR: ", N+1)
+   SOMA := N1 + N2
+   
+   SE (SOMA > 10) ENTAO
+      SE (SOMA MOD 2 = 0) ENTAO
+         ESCREVAL("O RESULTADO É PAR, ", SOMA)
+      SENAO
+           ESCREVAL("O RESULTADO É IMPAR, ", SOMA)
+      FIMSE
+   FIMSE
 
 Fimalgoritmo
